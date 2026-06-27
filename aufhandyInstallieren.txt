@@ -1,0 +1,18 @@
+
+Restore Checkpoint
+ich habe kein firefox auf handy
+
+Advised on browser options and provided troubleshooting steps
+Firefox brauchst du nicht.
+
+Auf dem iPhone kannst du einfach Safari benutzen. Wenn Safari die lokale Adresse nicht öffnet, liegt das nicht an Firefox, sondern meistens an:
+
+falscher Link
+PC und Handy nicht im gleichen WLAN
+Windows-Firewall
+Server läuft nicht mehr
+Nutze genau diese Adresse:
+http://192.168.0.242:8080
+
+Wenn du willst, gebe ich dir jetzt die genaue Firewall-Freigabe für Windows, damit Safari die Seite öffnen kann.
+

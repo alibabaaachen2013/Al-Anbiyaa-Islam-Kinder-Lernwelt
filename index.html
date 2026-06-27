@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📚 Kinder Lernbücher - Dashboard</title>
+    <meta name="theme-color" content="#4CAF50">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Lernbücher">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Dashboard View -->
+        <div id="dashboard" class="view active">
+            <header>
+                <h1>📚 <span data-i18n="appTitle">Al-Anbiyaa Islam Lernwelt</span></h1>
+                <p class="subtitle" data-i18n="subtitle">Islamische Lernbücher und Quiz für Kinder</p>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="de">🇩🇪 DE</button>
+                </div>
+            </header>
+            <div id="books-grid" class="books-grid">
+                <!-- Books will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Book Reader View -->
+        <div id="reader" class="view">
+            <header class="reader-header">
+                <button id="back-btn" class="btn-back">← Zurück</button>
+                <h2 id="book-title"></h2>
+                <span id="page-indicator"></span>
+            </header>
+            <main class="reader-content">
+                <div id="page-content" class="page-content">
+                    <!-- Page content will be loaded here -->
+                </div>
+            </main>
+            <nav class="page-navigation">
+                <button id="prev-btn" class="nav-btn">◀ Vorherige</button>
+                <div id="page-dots" class="page-dots"></div>
+                <button id="next-btn" class="nav-btn">Nächste ▶</button>
+            </nav>
+        </div>
+
+        <!-- Quiz View -->
+        <div id="quiz" class="view">
+            <header class="reader-header">
+                <button id="quiz-back-btn" class="btn-back">← Zurück</button>
+                <h2 id="quiz-title"></h2>
+                <span id="quiz-progress"></span>
+            </header>
+            <main class="quiz-content">
+                <div id="quiz-container" class="quiz-container">
+                    <div id="quiz-question" class="quiz-question"></div>
+                    <div id="quiz-options" class="quiz-options"></div>
+                    <div id="quiz-feedback" class="quiz-feedback"></div>
+                    <button id="quiz-next-btn" class="nav-btn quiz-next-btn" style="display:none;">Nächste Frage ▶</button>
+                </div>
+                <div id="quiz-result" class="quiz-result" style="display:none;">
+                    <div class="quiz-result-icon" id="quiz-result-icon"></div>
+                    <h3 id="quiz-result-title"></h3>
+                    <p id="quiz-result-text"></p>
+                    <div class="quiz-result-score" id="quiz-result-score"></div>
+                    <button id="quiz-retry-btn" class="nav-btn">🔄 Nochmal versuchen</button>
+                    <button id="quiz-home-btn" class="nav-btn quiz-home-btn">🏠 Zurück zur Übersicht</button>
+                </div>
+            </main>
+        </div>
+
+        <footer class="app-footer">
+            <span>© 2026 Al-Anbiyaa Islam Lernwelt</span>
+            <span class="footer-separator">•</span>
+            <a class="app-footer-link" href="#impressum">Impressum</a>
+            <span class="footer-separator">•</span>
+            <a class="app-footer-link" href="#kontakt">Kontakt</a>
+        </footer>
+
+        <details id="impressum" class="legal-details">
+            <summary>Impressum</summary>
+            <p>Webentwicklung / technische Umsetzung: Omar Bakrim</p>
+            <p>Diese Webanwendung dient ausschließlich zu Lern- und Bildungszwecken. Die Inhalte wurden nach bestem Wissen und Gewissen erstellt.</p>
+        </details>
+
+        <details id="kontakt" class="legal-details">
+            <summary>Kontakt</summary>
+            <p>E-Mail:</p>
+            <p>Kontaktanfragen bitte per E-Mail an .</p>
+        </details>
+    </div>
+
+    <script src="js/books.js"></script>
+    <script src="js/quizData.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

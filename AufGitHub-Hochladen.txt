@@ -1,0 +1,99 @@
+Projekt auf GitHub hochladen – Schritt für Schritt
+
+Schritt 1: GitHub-Konto erstellen (falls nicht vorhanden)
+1. Gehe zu https://github.com
+2. Klicke auf Sign up (oben rechts)
+3. E-Mail, Passwort und Username eingeben
+4. Konto per E-Mail bestaetigen
+
+Schritt 2: Neues Repository erstellen
+1. Nach dem Login oben rechts auf + klicken
+2. New repository waehlen
+3. Repository-Name eingeben, z.B. kissass-AlAnbiyaa
+4. Beschreibung optional eintragen
+5. Public waehlen (wichtig fuer GitHub Pages)
+6. Add a README file aktivieren
+7. Create repository klicken
+
+Schritt 3: Git auf dem PC installieren
+1. Gehe zu https://git-scm.com
+2. Git for Windows herunterladen
+3. Installation durchklicken (Standardoptionen sind ok)
+
+Schritt 4: Projekt lokal mit Git vorbereiten
+1. Terminal in deinem Projektordner oeffnen: d:\kissass-AlAnbiyaa
+2. Einmalig Benutzername und E-Mail setzen:
+
+git config --global user.name "Dein Name" (git config --global user.name "alibabaaachen2013")
+git config --global user.email "deine-email@gmail.com" (git config --global user.email "alibabaaachen2013@gmail.com")
+
+3. Repository initialisieren:
+
+git init
+
+Schritt 5: Dateien committen
+
+git add .
+git commit -m "Initial commit: Islamic learning app"
+
+Schritt 6: Mit GitHub verbinden und hochladen
+1. In GitHub im Repository auf Code (gruener Button) klicken
+2. HTTPS-URL kopieren, z.B. https://github.com/dein-username/kissass-AlAnbiyaa.git
+3. Im Terminal ausfuehren:
+
+git remote add origin https://github.com/dein-username/kissass-AlAnbiyaa.git
+git branch -M main
+git push -u origin main
+
+4. Falls Passwort abgefragt wird:
+- GitHub Username eingeben
+- Statt Passwort ein Personal Access Token verwenden
+
+Token erstellen:
+1. GitHub -> Settings -> Developer settings -> Personal access tokens -> Tokens (classic)
+2. Generate new token klicken
+3. Berechtigung repo auswaehlen
+4. Token kopieren und beim Push als Passwort einfuegen
+
+Schritt 7: GitHub Pages aktivieren
+1. Im Repository auf Settings gehen
+2. Links Pages waehlen
+3. Source: Deploy from a branch
+4. Branch main und Folder /(root) waehlen
+5. Save klicken
+6. Kurz warten, dann ist die App erreichbar unter:
+
+https://dein-username.github.io/kissass-AlAnbiyaa/
+
+Installation auf dem Handy nach dem Oeffnen der URL
+
+iPhone (Safari)
+1. Seite in Safari oeffnen
+2. Kurz warten, bis alles geladen ist
+3. Unten auf Teilen tippen (Quadrat mit Pfeil)
+4. Auf den Home-Bildschirm waehlen
+5. Namen pruefen oder aendern
+6. Hinzufuegen tippen
+7. App danach ueber Homescreen-Icon starten
+
+Falls Auf den Home-Bildschirm nicht sichtbar ist:
+1. Im Teilen-Menue nach unten scrollen
+2. Auf Aktionen bearbeiten tippen
+3. Auf den Home-Bildschirm aktivieren
+4. Erneut versuchen
+
+Android (Chrome oder Edge)
+1. Seite im Browser oeffnen
+2. Vollstaendig laden lassen
+3. Drei-Punkte-Menue oeffnen
+4. App installieren oder Zum Startbildschirm hinzufuegen waehlen
+5. Mit Installieren/Hinzufuegen bestaetigen
+6. App ueber Startbildschirm oder App-Liste oeffnen
+
+Offline-Test (wichtig)
+1. App einmal online vollstaendig oeffnen
+2. Ein paar Seiten durchklicken
+3. App schliessen
+4. Flugmodus aktivieren (oder WLAN/Mobilfunk aus)
+5. App ueber das Homescreen-Icon starten
+6. Wenn sie startet, ist der Offline-Cache aktiv
